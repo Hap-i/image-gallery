@@ -29,10 +29,10 @@ function Hero() {
     }
   };
   return (
-    <div className=" bg-gray-500 w-full h-screen mb-96 z-0">
+    <div className=" bg-gray-500 w-full md:h-screen h-96 mb-5 z-0 mx-auto">
       <div
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
-        className="w-full h-2/4 md:h-full bg-cover bg-center relative">
+        className="w-full h-full md:h-full bg-cover bg-center relative">
         <div
           className="absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5
         text-2xl rounded-full text-white cursor-pointer bg-black/20 p-2
