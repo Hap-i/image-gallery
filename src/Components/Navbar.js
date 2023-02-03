@@ -14,7 +14,9 @@ function Navbar() {
   return (
     <div
       className={
-        color ? "fixed w-full bg-slate-500 text-white" : "fixed w-full"
+        color
+          ? "fixed w-full bg-slate-500 text-white z-10"
+          : "fixed w-full z-10"
       }>
       <div className="mx-auto bg-transparent flex items-center justify-between md:justify-around h-12">
         <div>Logo</div>
