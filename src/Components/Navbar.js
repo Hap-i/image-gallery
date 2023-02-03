@@ -19,11 +19,11 @@ function Navbar() {
           : "fixed w-full z-10"
       }>
       <div className="mx-auto bg-transparent flex items-center justify-between md:justify-around h-12">
-        <div>Logo</div>
+        <div className="text-lg font-medium">Logo</div>
         <div className="cursor-pointer z-10 md:hidden">
           <AiOutlineMenu></AiOutlineMenu>
         </div>
-        <div className="hidden md:flex md:space-x-8">
+        <div className="hidden md:flex md:space-x-8 text-lg font-medium">
           <div className="cursor-pointer">About</div>
           <div className="cursor-pointer">Service</div>
           <div className="cursor-pointer">Gallery</div>
