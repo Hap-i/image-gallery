@@ -40,6 +40,7 @@ function HomeGallery() {
     } else if (currentTab === TABS.POTRAIT) {
       settabContent(potraitData);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTab]);
 
   const changeCurrentTab = (tab) => {
