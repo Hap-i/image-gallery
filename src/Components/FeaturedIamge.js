@@ -21,20 +21,35 @@ function FeaturedIamge() {
     "https://ik.imagekit.io/hapi/Potrait/photo-1607346256330-dee7af15f7c5.avif",
   ];
   return (
-    <div className="mb-10">
+    <div className="mb-10 relative">
       <div className="text-center text-4xl mb-10">Featured Images</div>
-      <div className="w-full h-[200px] bg-black grid grid-rows-1 grid-flow-col overflow-hidden">
-        {featuredImages.map((imageUrl, i) => {
-          return (
-            <div
-              key={i}
-              style={{
-                backgroundImage: `url(${imageUrl})`,
-              }}
-              className="w-[150px] md:w-[200px] bg-cover bg-no-repeat bg-center relative"></div>
-          );
-        })}
+      <div className="flex overflow-x-hidden">
+        <div className="whitespace-nowrap flex animate-marquee">
+          {featuredImages.map((imgUrl, i) => {
+            return (
+              <div
+                key={i}
+                style={{ backgroundImage: `url(${imgUrl})` }}
+                className=" w-[150px]  h-[150px] md:w-[200px] md:h-[200px] bg-cover bg-center"></div>
+            );
+          })}
+        </div>
+        <div className="whitespace-nowrap flex animate-marquee aria-hidden:true">
+          {featuredImages.map((imgUrl, i) => {
+            return (
+              <div
+                key={i}
+                style={{ backgroundImage: `url(${imgUrl})` }}
+                className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-cover bg-center"></div>
+            );
+          })}
+        </div>
       </div>
+      {/* <div>
+        <button className="bg-black text-white p-2 rounded-sm relative bottom-24 md:bottom-28 left-1/2 translate-x-[-50%]">
+          Follow me
+        </button>
+      </div> */}
     </div>
   );
 }
