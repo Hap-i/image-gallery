@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./About";
+import ContactUs from "./ContactUs";
 import FeaturedIamge from "./FeaturedIamge";
 
 import Hero from "./Hero";
@@ -15,6 +16,7 @@ function Home() {
       <About></About>
       <HomeGallery></HomeGallery>
       <Pricing></Pricing>
+      <ContactUs></ContactUs>
       <FeaturedIamge></FeaturedIamge>
     </>
   );

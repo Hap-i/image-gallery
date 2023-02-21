@@ -1,4 +1,8 @@
 import React from "react";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { MdFacebook } from "react-icons/md";
+import { RxDotFilled } from "react-icons/rx";
+import { BsWhatsapp } from "react-icons/bs";
 
 function FeaturedIamge() {
   const featuredImages = [
@@ -21,36 +25,58 @@ function FeaturedIamge() {
     "https://ik.imagekit.io/hapi/Potrait/photo-1607346256330-dee7af15f7c5.avif",
   ];
   return (
-    <div className="mb-10 relative">
-      <div className="text-center text-4xl mb-10">Featured Images</div>
-      <div className="flex overflow-x-hidden">
-        <div className="whitespace-nowrap flex animate-marquee">
-          {featuredImages.map((imgUrl, i) => {
-            return (
-              <div
-                key={i}
-                style={{ backgroundImage: `url(${imgUrl})` }}
-                className=" w-[150px]  h-[150px] md:w-[200px] md:h-[200px] bg-cover bg-center"></div>
-            );
-          })}
+    <>
+      <div className="relative mt-10">
+        <div className="text-center text-4xl mb-10">Featured Images</div>
+        <div className="flex overflow-x-hidden">
+          <div className="whitespace-nowrap flex animate-marquee">
+            {featuredImages.map((imgUrl, i) => {
+              return (
+                <div
+                  key={i}
+                  style={{ backgroundImage: `url(${imgUrl})` }}
+                  className=" w-[150px]  h-[150px] md:w-[200px] md:h-[200px] bg-cover bg-center"></div>
+              );
+            })}
+          </div>
+          <div className="whitespace-nowrap flex animate-marquee aria-hidden:true">
+            {featuredImages.map((imgUrl, i) => {
+              return (
+                <div
+                  key={i}
+                  style={{ backgroundImage: `url(${imgUrl})` }}
+                  className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-cover bg-center"></div>
+              );
+            })}
+          </div>
         </div>
-        <div className="whitespace-nowrap flex animate-marquee aria-hidden:true">
-          {featuredImages.map((imgUrl, i) => {
-            return (
-              <div
-                key={i}
-                style={{ backgroundImage: `url(${imgUrl})` }}
-                className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] bg-cover bg-center"></div>
-            );
-          })}
-        </div>
-      </div>
-      {/* <div>
+        {/* <div>
         <button className="bg-black text-white p-2 rounded-sm relative bottom-24 md:bottom-28 left-1/2 translate-x-[-50%]">
-          Follow me
+        Follow me
         </button>
       </div> */}
-    </div>
+      </div>
+      <div className="bg-black w-full h-10 mb-10 flex justify-center items-center md:space-x-5 space-x-1">
+        <div className="text-white cursor-pointer flex items-center space-x-1 hover:text-blue-500">
+          <MdFacebook></MdFacebook>
+          <span>Facebook</span>
+        </div>
+        <div className="text-white">
+          <RxDotFilled></RxDotFilled>
+        </div>
+        <div className="text-white cursor-pointer flex items-center space-x-1 hover:text-pink-500">
+          <AiOutlineInstagram></AiOutlineInstagram>
+          <span>Instagram</span>
+        </div>
+        <div className="text-white">
+          <RxDotFilled></RxDotFilled>
+        </div>
+        <div className="text-white cursor-pointer flex items-center space-x-1 hover:text-green-500">
+          <BsWhatsapp></BsWhatsapp>
+          <span>Whatsapp</span>
+        </div>
+      </div>
+    </>
   );
 }
 
