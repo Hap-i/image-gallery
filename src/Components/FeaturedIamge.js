@@ -56,7 +56,7 @@ function FeaturedIamge() {
         </button>
       </div> */}
       </div>
-      <div className="bg-black w-full h-10 mb-10 flex justify-center items-center md:space-x-5 space-x-1">
+      <div className="bg-black w-full h-10 flex justify-center items-center md:space-x-5 space-x-1">
         <div className="text-white cursor-pointer flex items-center space-x-1 hover:text-blue-500">
           <MdFacebook></MdFacebook>
           <span>Facebook</span>
