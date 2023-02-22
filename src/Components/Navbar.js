@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [color, setcolor] = useState(false);
@@ -24,11 +25,13 @@ function Navbar() {
           <AiOutlineMenu></AiOutlineMenu>
         </div>
         <div className="hidden md:flex md:space-x-8 text-lg font-medium">
-          <div className="cursor-pointer">About</div>
-          <div className="cursor-pointer">Service</div>
-          <div className="cursor-pointer">Gallery</div>
-          <div className="cursor-pointer">Pricing</div>
-          <div className="cursor-pointer">Contact</div>
+          <Link className="cursor-pointer">About</Link>
+          <Link className="cursor-pointer">Service</Link>
+          <Link to="/gallery" className="cursor-pointer">
+            Gallery
+          </Link>
+          <Link className="cursor-pointer">Pricing</Link>
+          <Link className="cursor-pointer">Contact</Link>
         </div>
       </div>
     </div>
