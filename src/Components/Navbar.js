@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
   const [color, setcolor] = useState(false);
@@ -12,6 +12,12 @@ function Navbar() {
     }
   };
   window.addEventListener("scroll", changeColor);
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -50;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
   return (
     <div
       className={
@@ -25,13 +31,31 @@ function Navbar() {
           <AiOutlineMenu></AiOutlineMenu>
         </div>
         <div className="hidden md:flex md:space-x-8 text-lg font-medium">
-          <Link className="cursor-pointer">About</Link>
-          <Link className="cursor-pointer">Service</Link>
-          <Link to="/gallery" className="cursor-pointer">
+          <HashLink
+            scroll={(el) => scrollWithOffset(el)}
+            to="/#aboutTag"
+            className="cursor-pointer">
+            About
+          </HashLink>
+          {/* <HashLink className="cursor-pointer">Service</HashLink> */}
+          <HashLink
+            scroll={(el) => scrollWithOffset(el)}
+            to="/#Home-Gallery"
+            className="cursor-pointer">
             Gallery
-          </Link>
-          <Link className="cursor-pointer">Pricing</Link>
-          <Link className="cursor-pointer">Contact</Link>
+          </HashLink>
+          <HashLink
+            scroll={(el) => scrollWithOffset(el)}
+            to="/#pricing"
+            className="cursor-pointer">
+            Pricing
+          </HashLink>
+          <HashLink
+            scroll={(el) => scrollWithOffset(el)}
+            to="/#Contact-us"
+            className="cursor-pointer">
+            Contact
+          </HashLink>
         </div>
       </div>
     </div>

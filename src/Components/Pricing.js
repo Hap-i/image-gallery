@@ -2,7 +2,7 @@ import React from "react";
 
 function Pricing() {
   return (
-    <div>
+    <div id="pricing">
       <div className="text-4xl text-center mb-10 mt-20">Our Plans</div>
       <div className="space-y-14 mb-10 lg:flex lg:justify-center lg:space-y-0 lg:space-x-28 lg:mx-36">
         <div className="bg-slate-200 text-center w-2/3 mx-auto shadow-xl shadow-black/40">

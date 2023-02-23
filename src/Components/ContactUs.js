@@ -24,7 +24,7 @@ function ContactUs() {
       );
   };
   return (
-    <div>
+    <div id="Contact-us">
       <div className="text-center text-4xl mb-10">Contact us</div>
       <div className="lg:border-[3px] lg:rounded-3xl lg:flex lg:justify-center lg:items-center lg:space-x-10 lg:w-3/4 mx-auto h-auto lg:p-10">
         <div className="w-1/2 hidden lg:block">

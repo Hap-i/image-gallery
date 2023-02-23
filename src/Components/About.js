@@ -1,7 +1,7 @@
 import React from "react";
 function About() {
   return (
-    <div className="">
+    <div id="aboutTag" className="">
       <div className="text-center text-6xl font-bold mb-12">Who we are</div>
       <div className="">
         <div className="text-center font-semibold mb-5">
