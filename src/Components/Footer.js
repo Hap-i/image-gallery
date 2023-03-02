@@ -16,7 +16,7 @@ function Footer() {
     "https://ik.imagekit.io/hapi/All/photo-1609351231656-9285d74d363d.avif",
   ];
   return (
-    <div className="bg-color-4">
+    <div className="bg-color-2">
       <div className="md:flex md:justify-evenly md:space-x-10 md:p-10 p-7">
         <div className="md:w-1/3 mb-10">
           <div className="text-4xl mb-3">LOGO</div>

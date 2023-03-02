@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 function HomeGallery() {
   const TABS = {
     ALL: "All",
@@ -50,7 +50,7 @@ function HomeGallery() {
   };
 
   return (
-    <div className="my-10">
+    <div id="Home-Gallery" className="my-10">
       <div className="text-center text-4xl my-10">Latest Works</div>
       <div className="flex justify-center space-x-10">
         <div
@@ -96,9 +96,11 @@ function HomeGallery() {
         </div>
       </div>
       <div className="text-center">
-        <button className="bg-black text-white border rounded-xl p-3 hover:opacity-90">
-          Explore Gallery
-        </button>
+        <Link to="/gallery">
+          <button className="bg-color-3 border-color-3 text-black border rounded-xl p-3 hover:opacity-90">
+            Explore Gallery
+          </button>
+        </Link>
       </div>
     </div>
   );

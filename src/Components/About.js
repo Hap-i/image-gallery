@@ -1,7 +1,7 @@
 import React from "react";
 function About() {
   return (
-    <div className="">
+    <div id="aboutTag" className="">
       <div className="text-center text-6xl font-bold mb-12">Who we are</div>
       <div className="">
         <div className="text-center font-semibold mb-5">
@@ -15,14 +15,14 @@ function About() {
       </div>
       <div>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-y-10 text-center md:w-2/3 mx-auto m-5 p-5">
-          <div className="bg-slate-200 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
+          <div className="bg-color-2 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
             <lord-icon
               src="https://cdn.lordicon.com/mxddzdmt.json"
               trigger="hover"
               style={{ width: "120px", height: "120px" }}></lord-icon>
             <div className="md:text-lg text-sm">Latest Equipment</div>
           </div>
-          <div className="bg-slate-200 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
+          <div className="bg-color-2 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
             <lord-icon
               src="https://cdn.lordicon.com/ouunjdko.json"
               trigger="hover"
@@ -30,7 +30,7 @@ function About() {
               style={{ width: "120px", height: "120px" }}></lord-icon>
             <div className="md:text-lg text-sm">Indoor/Outdoor shooting</div>
           </div>
-          <div className="bg-slate-200 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
+          <div className="bg-color-2 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
             <lord-icon
               src="https://cdn.lordicon.com/ujmqspux.json"
               trigger="hover"
@@ -38,21 +38,21 @@ function About() {
               style={{ width: "120px", height: "120px" }}></lord-icon>
             <div className="md:text-lg text-sm">Afforadable Price</div>
           </div>
-          <div className="bg-slate-200 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
+          <div className="bg-color-2 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
             <lord-icon
               src="https://cdn.lordicon.com/iejknaed.json"
               trigger="hover"
               style={{ width: "120px", height: "120px" }}></lord-icon>
             <div className="md:text-lg text-sm">Fast Delivery</div>
           </div>
-          <div className="bg-slate-200 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
+          <div className="bg-color-2 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
             <lord-icon
               src="https://cdn.lordicon.com/jefnhaqh.json"
               trigger="hover"
               style={{ width: "120px", height: "120px" }}></lord-icon>
             <div className="md:text-lg text-sm">Experienced Team</div>
           </div>
-          <div className="bg-slate-200 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
+          <div className="bg-color-2 h-[180px] w-[150px] md:h-56 md:w-56 mx-auto md:p-3">
             <lord-icon
               src="https://cdn.lordicon.com/xhitaejr.json"
               trigger="hover"
