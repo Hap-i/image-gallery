@@ -26,7 +26,7 @@ function ContactUs() {
   return (
     <div id="Contact-us">
       <div className="text-center text-4xl mb-10">Contact us</div>
-      <div className="lg:border-[3px] lg:rounded-3xl lg:flex lg:justify-center lg:items-center lg:space-x-10 lg:w-3/4 mx-auto h-auto lg:p-10">
+      <div className="lg:border-[3px] lg:rounded-3xl lg:flex lg:justify-center lg:items-center lg:space-x-10 lg:w-3/4 mx-auto h-auto lg:p-10 bg-color-2 border-color-2">
         <div className="w-1/2 hidden lg:block">
           <img src="./contact-us.svg" alt="" />
           <div className="flex justify-around mt-10 space-x-5 ">
@@ -78,7 +78,7 @@ function ContactUs() {
               <div className="flex justify-center lg:justify-start">
                 <button
                   type="submit"
-                  className="bg-[#FF7B54] px-10 py-1 text-xl text-white">
+                  className="bg-color-4 px-10 py-1 text-xl text-white">
                   Send
                 </button>
               </div>

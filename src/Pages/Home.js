@@ -10,8 +10,8 @@ import Pricing from "../Components/Pricing";
 
 function Home() {
   return (
-    <div>
-      <Navbar></Navbar>
+    <div className="bg-color-1">
+      <Navbar transparent={true}></Navbar>
       <Hero></Hero>
       <About></About>
       <HomeGallery></HomeGallery>

@@ -1,11 +1,12 @@
 import React from "react";
 import GalleryImg from "../Components/Gallery/GalleryImg";
 import Sidebar from "../Components/Gallery/Sidebar";
+import GalleryNavbar from "../Components/Gallery/GalleryNavbar";
 
 function Gallery() {
   return (
     <div className="relative">
-      <div className="fixed bg-slate-500 w-screen h-28">Gallery</div>
+      <GalleryNavbar></GalleryNavbar>
       <Sidebar></Sidebar>
       <GalleryImg></GalleryImg>
     </div>

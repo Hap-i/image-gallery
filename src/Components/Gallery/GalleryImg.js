@@ -20,7 +20,7 @@ function GalleryImg() {
     "https://ik.imagekit.io/hapi/Potrait/photo-1583397758920-86c1cb75b8fe.avif",
   ];
   return (
-    <div className="pt-28 lg:ml-[200px] lg:px-20">
+    <div className="pt-16 lg:ml-[200px] lg:px-20 bg-color-1">
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
         <Masonry>
           {images.map((img, i) => {

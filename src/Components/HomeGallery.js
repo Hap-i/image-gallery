@@ -97,7 +97,7 @@ function HomeGallery() {
       </div>
       <div className="text-center">
         <Link to="/gallery">
-          <button className="bg-black text-white border rounded-xl p-3 hover:opacity-90">
+          <button className="bg-color-3 border-color-3 text-black border rounded-xl p-3 hover:opacity-90">
             Explore Gallery
           </button>
         </Link>
